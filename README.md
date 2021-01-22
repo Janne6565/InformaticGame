@@ -44,35 +44,35 @@ Dieses Spiel wurde in wegen einer Informatik Aufgabe  programmiert.
       
 
 1.0:
-    - Grundlagen des Spieles
-    - "Tutorial" Eingebunden
-    - Grundlagendes Kampfsystems (Begrenzt auf 5 Waffenslots)
-    - Neue Monster: 
-      - Alter Zombie
-        - Loot: 2 Verrotetes Fleisch
-        - Leben: 20 
-        - Waffe: Stock
-      - Skelett:
-        - Loot: 1-3 Knochen
-        - Leben: 20
-        - Waffe: Lang Schwert
-    - Neue Waffen: 
-      - Alter Dolch:
-        - Schaden: 5
-        - Haltbarkeit: 5
-        - Stärke: 20%
-      - Stock:
-        - Schaden: 1
-        - Haltbarkeit: 10
-        - Stärke: 2%
-      - Lang Schwert:
-        - Schaden: 10
-        - Haltbarkeit: 25
-        - Stärke: 40%
-    - Neue Items:
-      - Verrotetes Fleisch: 
-        - Wert: 1€
-      - Knochen: 
-        - Wert: 5€
-      - Faden: 
-        - Wert: 20€
+  - Grundlagen des Spieles
+  - "Tutorial" Eingebunden
+  - Grundlagendes Kampfsystems (Begrenzt auf 5 Waffenslots)
+  - Neue Monster: 
+    - Alter Zombie
+      - Loot: 2 Verrotetes Fleisch
+      - Leben: 20 
+      - Waffe: Stock
+    - Skelett:
+      - Loot: 1-3 Knochen
+      - Leben: 20
+      - Waffe: Lang Schwert
+  - Neue Waffen: 
+    - Alter Dolch:
+      - Schaden: 5
+      - Haltbarkeit: 5
+      - Stärke: 20%
+    - Stock:
+      - Schaden: 1
+      - Haltbarkeit: 10
+      - Stärke: 2%
+    - Lang Schwert:
+      - Schaden: 10
+      - Haltbarkeit: 25
+      - Stärke: 40%
+  - Neue Items:
+    - Verrotetes Fleisch: 
+      - Wert: 1€
+    - Knochen: 
+      - Wert: 5€
+    - Faden: 
+      - Wert: 20€
