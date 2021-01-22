@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Material
+comment1.params=pName\ pStrength
+comment1.target=Material(java.lang.String,\ int)
+comment2.params=pStrength
+comment2.target=void\ setStrength(int)
+comment3.params=pName
+comment3.target=void\ setName(java.lang.String)
+comment4.params=
+comment4.target=int\ getStrength()
+comment5.params=
+comment5.target=java.lang.String\ getName()
+numComments=6

@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=ItemStack
+comment1.params=pName\ pCount\ pIcon\ pWorth
+comment1.target=ItemStack(java.lang.String,\ int,\ java.util.ArrayList,\ int)
+comment2.params=
+comment2.target=java.lang.String\ getName()
+comment3.params=
+comment3.target=int\ getCount()
+comment4.params=
+comment4.target=java.util.ArrayList\ getIcon()
+comment5.params=
+comment5.target=int\ getWorth()
+comment6.params=pName
+comment6.target=ItemStack\ setName(java.lang.String)
+comment7.params=pCount
+comment7.target=ItemStack\ setCount(int)
+comment8.params=pIcon
+comment8.target=ItemStack\ setIcon(java.util.ArrayList)
+comment9.params=pWorth
+comment9.target=ItemStack\ setWorth(int)
+numComments=10

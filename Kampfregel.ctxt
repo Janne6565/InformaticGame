@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Kampfregel
+comment1.params=
+comment1.target=void\ newFrame()
+comment2.params=
+comment2.target=Kampfregel()
+comment3.params=he
+comment3.target=void\ firstRound(Held)
+numComments=4

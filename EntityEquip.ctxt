@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=EntityEquip
+comment1.params=
+comment1.target=EntityEquip()
+comment10.params=pWeapon
+comment10.target=boolean\ addWeapon(Weapon)
+comment2.params=pHead\ pBelly\ pLegs\ pFeets\ pWeapon\ pItems
+comment2.target=EntityEquip(Armor,\ Armor,\ Armor,\ Armor,\ java.util.ArrayList,\ java.util.ArrayList)
+comment3.params=
+comment3.target=java.util.ArrayList\ getArmor()
+comment4.params=
+comment4.target=java.util.ArrayList\ getWeapons()
+comment5.params=
+comment5.target=java.util.ArrayList\ getItems()
+comment6.params=pItems
+comment6.target=EntityEquip\ setItems(java.util.ArrayList)
+comment7.params=item
+comment7.target=EntityEquip\ addItem(ItemStack)
+comment8.params=position\ pArmor
+comment8.target=void\ setArmor(java.lang.String,\ Armor)
+comment9.params=pWeapon
+comment9.target=void\ setWeapons(java.util.ArrayList)
+numComments=11
