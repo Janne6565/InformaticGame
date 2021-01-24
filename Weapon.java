@@ -6,7 +6,7 @@ public class Weapon
     private int damage;
     private float durability = 1;
     private float breakability;
-    private ArrayList<String> icon;
+    private ArrayList<String> icon; // Kleines Icon von der Waffe
     private int strength;
     private ArrayList<String> info;
 

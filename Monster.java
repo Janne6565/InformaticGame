@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Monster
+public class Monster  // Monster
 {
     String name;
     String type;
@@ -94,7 +94,7 @@ public class Monster
         return this;
     }
 
-    public boolean damage(float damage){
+    public boolean damage(float damage){ // Fügt Schaden zu | Returned ob es überlebt hat
         health -= damage;
         if (health > 0){
             return true;
@@ -103,7 +103,7 @@ public class Monster
         }
     }
 
-    public boolean isAlive(){
+    public boolean isAlive(){ // Returned ob es lebt
         if (health > 0){
             return true;
         }else{

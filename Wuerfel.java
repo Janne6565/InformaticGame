@@ -13,7 +13,7 @@ public class Wuerfel {
       
       public int wuerfeln(){
           return (min + (int) (Math.random() * ((max - min) + 1)));
-        }
+        } // Gibt eine zufällige Zahl zwischen min und max aus
       
       public void setMin(int pMin){
           min = pMin;

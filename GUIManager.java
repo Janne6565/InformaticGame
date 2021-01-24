@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class GUIManager {
+public class GUIManager {  // Dies ist die Klasse, die dafür zuständig ist, das komplette UI zu übernehmen
 
     private static int timeBetweenAnimation = 500;
     static Scanner scanner = new Scanner(System.in);
@@ -10,7 +10,7 @@ public class GUIManager {
 
     }
 
-    public static void openMainMenu(Held he) throws InterruptedException {
+    public static void openMainMenu(Held he) throws InterruptedException { // Öffnet das Haupmenü
         ArrayList<String> optionOne = new ArrayList<>();
         optionOne.add("Kampf");
         ArrayList<String> optionTwo = new ArrayList<>();
@@ -23,14 +23,14 @@ public class GUIManager {
         options.add(optionOne);
         options.add(optionTwo);
         options.add(optionThree);
-        int action = openMenu(options, false);
+        options.add(optionFour);
+        int action = openMenu(options, false); // Öffnet ein Menü mit den Möglichkeiten: optionOne optionTwo optionThree optionFour
         newFrame();
         switch (action){
             case 1:
-                kämpfen(he, LibaryMonsters.getRandomMonster(he.getLevel()));
+                kämpfen(he, LibaryMonsters.getRandomMonster(he.getLevel())); // Startet einen Kampf mit einem zufälligen Monster
                 break;
             case 2:
-
                 ArrayList<String> listTypes = new ArrayList<>();
                 ArrayList<Integer> listPosition = new ArrayList<>();
                 ArrayList<ItemStack> listItems = new ArrayList<>();
@@ -56,15 +56,15 @@ public class GUIManager {
                     listWord.add(item.getWorth() + "€");
                     listAllItems.add(listWord);
                 }
-                int itemChosen = openMenu(listAllItems, true);
+                int itemChosen = openMenu(listAllItems, true); // Öffnet ein Menü mit allen Items
                 newFrame();
-                if (itemChosen == listAllItems.size()) {
+                if (itemChosen == listAllItems.size()) { // Wenn man zurück will
                     openMainMenu(he);
                 }else{
                         System.out.print("\n");
                         System.out.print(listItems.get(itemChosen - 1).getCount() + "x " + listItems.get(itemChosen - 1).getName() + "\n");
                         for (String string : listItems.get(itemChosen - 1).getIcon()) {
-                            for (int i = 0; i < 50; i++) {
+                            for (int i = 0; i < 50; i++) { // Zeigt das Icon des Items an
                                 if (string.length() > i) {
                                     System.out.print(string.charAt(i));
                                 }
@@ -75,7 +75,7 @@ public class GUIManager {
                         sell.add("Verkaufen (" + listItems.get(itemChosen - 1).getWorth() + "€)");
                         ArrayList<ArrayList<String>> list = new ArrayList<>();
                         list.add(sell);
-                        int whatToDo = openMenu(list, true);
+                        int whatToDo = openMenu(list, true); // Listet die Optionen auf
                         newFrame();
                         switch (whatToDo) {
                             case 1:
@@ -98,7 +98,7 @@ public class GUIManager {
                         }
                     }
                 break;
-            case 3:
+            case 3: // Wenn man Shop auswählt
                 ArrayList<Integer> price = new ArrayList<>();
                 ArrayList<Weapon> weapons = new ArrayList<>();
                 LibaryWeapons weaponsLib = new LibaryWeapons();
@@ -113,7 +113,7 @@ public class GUIManager {
                 heal.add("5€ : Heiltrank");
                 listOptions.add(heal);
                 int i = 0;
-                for (Weapon weapon : weapons){
+                for (Weapon weapon : weapons){ // Listet die Waffen auf
                     if (weapon != null) {
                         ArrayList<String> option = new ArrayList<>();
                         option.add(price.get(i) + "€: " + weapon.getName());
@@ -122,7 +122,7 @@ public class GUIManager {
                     i++;
                 }
                 int weaponShop = openMenu(listOptions, true);
-                if (weaponShop == 1){
+                if (weaponShop == 1){ // Für den Heiltrank
                     if (he.getCredits() >= 5) {
                         he.setHealth(100);
                         he.setCredits(he.getCredits() - 5);
@@ -137,11 +137,11 @@ public class GUIManager {
                         openMainMenu(he);
                     }else {
                         newFrame();
-                        for (String string : weapons.get(weaponShop - 2).getIcon()) {
+                        for (String string : weapons.get(weaponShop - 2).getIcon()) { // Zeigt das Icon der Waffe an
                             System.out.print(string + "\n");
                         }
-                        System.out.print("\n" + weapons.get(weaponShop - 2).getName());
-                        System.out.print(price.get(weaponShop - 2) + "\n");
+                        System.out.print("\n" + weapons.get(weaponShop - 2).getName()); // Zeigt den Namen der Waffe an
+                        System.out.print(price.get(weaponShop - 2) + "\n"); // Zeigt den Preis der Waffe an
                         ArrayList<String> buy = new ArrayList<>();
                         buy.add("Kaufen");
                         ArrayList<ArrayList<String>> list = new ArrayList<>();
@@ -170,7 +170,8 @@ public class GUIManager {
         }
     }
 
-    public static void openChest(Held he, Weapon we) throws InterruptedException {
+    public static void openChest(Held he, Weapon we) throws InterruptedException { // Um Loot zu erhalten
+        // Animation der Kiste:
         System.out.println("");
         System.out.println("");
         System.out.println("");
@@ -522,7 +523,7 @@ public class GUIManager {
         }
     }
 
-    public static void kämpfen(Held he, Monster mo) throws InterruptedException{
+    public static void kämpfen(Held he, Monster mo) throws InterruptedException{ // Für einen Kampf mit einem Monster
         newFrame();
         System.out.println("Du wurdest von " + mo.getName() + " in einen Kampf verwickelt.\nDrücke Enter um fortzufahren");
         scanner.nextLine();
@@ -583,7 +584,7 @@ public class GUIManager {
         openFightMenu(scanner.nextInt(), he, mo);
     }
 
-    public static ArrayList<Integer> openFightMenu(int menu, Held he, Monster mo) throws InterruptedException {
+    public static ArrayList<Integer> openFightMenu(int menu, Held he, Monster mo) throws InterruptedException { // Kampfmenü Öffnen
         newFrame();
 
         System.out.println(he.getName() + ": [" + getHealthBar(he) + "] " + he.getHealth() + "/" + he.getMaxHealth() + "           " + mo.getName() + ": [" + getHealthBar(mo) + "] " + mo.getHealth() + "/" + mo.getMaxHealth());
@@ -593,7 +594,7 @@ public class GUIManager {
                 System.out.println("Wähle aus, mit welcher Waffe du angreifen willst.\n");
                 ArrayList<ArrayList<String>> weapons = new ArrayList<>();
 
-                for (Weapon weapon : he.getEquip().getWeapons()){
+                for (Weapon weapon : he.getEquip().getWeapons()){ // Auflistung aller Waffen
                     ArrayList<String> listStrings = new ArrayList<>();
                     listStrings.add(weapon.getName());
                     listStrings.add("Schaden: " + weapon.getDamage());
@@ -646,8 +647,8 @@ public class GUIManager {
                             damage =(float) (damage * (1 - percentage));
                             he.getEquip().getWeapons().get(action - 1).use();
                         }
-                        if (he.damage((int) (damage))){
-                            if ((he.getEquip().getWeapons().get(action - 1).getDurability() / (he.getEquip().getWeapons().get(action - 1).getBreakability() / 100)) < 1){ //Wenn Waffe Kaputt
+                        if (he.damage((int) (damage))){ // Wenn der Player es überlebt
+                            if ((he.getEquip().getWeapons().get(action - 1).getDurability() / (he.getEquip().getWeapons().get(action - 1).getBreakability() / 100)) < 1){ // Wenn Waffe Kaputt
                                 he.getEquip().getItems().add(LibaryItems.scrap.setCount(1));
                                 System.out.println("Deine Waffe ist kaputt gegangen!!");
                                 he.getEquip().getWeapons().remove(action - 1);
@@ -658,12 +659,12 @@ public class GUIManager {
                             System.out.println("Du bist gestorben");
                         }
                     }
-                }else {
-                showHandlers(he, mo);
+                } else {
+                    showHandlers(he, mo);
                 }
 
                 break;
-            case 2:
+            case 2: // Item Auswahl
                 ArrayList<String> listTypes = new ArrayList<>();
                 ArrayList<Integer> listPosition = new ArrayList<>();
                 ArrayList<ItemStack> listItems = new ArrayList<>();
@@ -742,7 +743,7 @@ public class GUIManager {
     }
 
 
-    public static int openMenu(ArrayList<ArrayList<String>> listAnswers, boolean cancel){
+    public static int openMenu(ArrayList<ArrayList<String>> listAnswers, boolean cancel){ // Öffnet ein Menü mit listAnswers als auswahlmöglichkeiten | Cancel sagt, ob man zurück gehen kann
         System.out.println("___________________________________________________________________");
         int countLine = 1;
 
@@ -778,7 +779,7 @@ public class GUIManager {
         return scanner.nextInt();
     }
 
-    public static String getHealthBar(Monster monster){
+    public static String getHealthBar(Monster monster){ // Gibt eine Lebensbar zurück
         String healthBar = "";
         for (int i = 0; i + 2 <= monster.getMaxHealth(); i+=2){
             if (i <= monster.getHealth()){
@@ -790,7 +791,7 @@ public class GUIManager {
         return healthBar;
     }
 
-    public static String getHealthBar(Held held){
+    public static String getHealthBar(Held held){ // Gibt eine Lebensbar zurück
         String healthBar = "";
         for (int i = 0; i + 10 <= held.getMaxHealth(); i+=10){
             if (i <= held.getHealth()){

@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class LibaryItems {
+public class LibaryItems {  // Bibliothek mit Items
 
     public static ItemStack bone;
     public static ItemStack rottenFlash;
@@ -49,6 +49,5 @@ public class LibaryItems {
         scrap = new ItemStack("Schrott", 1, stringIcon, 1);
 
         ArrayList<String> iconSnakeSkin = new ArrayList<>();
-        StringIcon.add("")
     }
 }

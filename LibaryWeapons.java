@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class LibaryWeapons {
+public class LibaryWeapons { // Waffen Bibliothek
     public static Weapon oldDagger;
     public static Weapon stick;
     public static Weapon longSword;

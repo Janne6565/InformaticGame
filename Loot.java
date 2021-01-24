@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Loot {
+public class Loot { // Loot Klasse für Monster
     ArrayList<ItemStack> drops = new ArrayList<>();
 
     public Loot(){

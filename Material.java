@@ -1,4 +1,4 @@
-public class Material{
+public class Material{ // Material für Rüstung (Wird in späteren Updates hinzugefügt)
     private String name;
     private int strength;
     

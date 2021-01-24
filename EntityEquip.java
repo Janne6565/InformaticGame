@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-public class EntityEquip{
+public class EntityEquip{  // Diese Klasse beinhaltet das Equipment aller Entitys
     private Armor armorHead;
     private Armor armorBelly;
     private Armor armorLegs;
@@ -27,15 +27,15 @@ public class EntityEquip{
         armor.add(armorLegs);
         armor.add(armorFeets);
         return armor;
-    }
+    }   // Gibt die Rüstung als ArrayList zurück
     
     public ArrayList<Weapon> getWeapons(){
         return weapons;
-    }
+    } // Gibt alle Waffen als ArrayList zurück
 
     public ArrayList<ItemStack> getItems(){
         return items;
-    }
+    } // Gibt alle Items als ArrayList zurück
 
     public EntityEquip setItems(ArrayList<ItemStack> pItems){
         items = pItems;
@@ -45,7 +45,7 @@ public class EntityEquip{
     public EntityEquip addItem(ItemStack item){
         items.add(item);
         return this;
-    }
+    }  // Fügt ein Item hinzu
     
     public void setArmor(String position, Armor pArmor){
         switch (position){
@@ -62,7 +62,7 @@ public class EntityEquip{
                 armorFeets = pArmor;
                 break;
         }
-    }
+    } // Legt die Rüstung fest
 
     public void setWeapons(ArrayList<Weapon> pWeapon){
         weapons = pWeapon;
@@ -71,5 +71,5 @@ public class EntityEquip{
     public boolean addWeapon(Weapon pWeapon){
         weapons.add(pWeapon);
         return false;
-    }
+    } // FÜgt eine Waffe hinzu
 }

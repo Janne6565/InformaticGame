@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class LibaryMonsters {
+public class LibaryMonsters { // Monster Bibliothek
     public static Monster oldZombie;
     public static Monster skelleton;
     public static Monster spider;

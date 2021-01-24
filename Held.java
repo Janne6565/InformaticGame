@@ -14,11 +14,11 @@ public class Held
       maxHealth = pMaxHealth;
     }
 
-    public float getAttackDamage(int slot) {
+    public float getAttackDamage(int slot) { // Berechnet den Schaden
       return (float) (equip.getWeapons().get(slot).getDamage() + (double) equip.getWeapons().get(slot).getDamage() * level * 0.1);
     }
 
-    public boolean damage(int damage){
+    public boolean damage(int damage){ // Fügt schaden hinzu und returned ob es überlebt hat
         health -= damage;
         System.out.println(health + " und " + damage);
         if (health > 0){

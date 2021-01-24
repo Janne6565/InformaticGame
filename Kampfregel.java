@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Kampfregel
+public class Kampfregel  // Main Klasse
 {
     Held he;
     Wuerfel wuerfel6 = new Wuerfel(0,6);
