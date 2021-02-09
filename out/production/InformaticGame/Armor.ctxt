@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Armor
+comment1.params=pName\ pMaterial
+comment1.target=Armor(java.lang.String,\ Material)
+comment2.params=
+comment2.target=java.lang.String\ getName()
+comment3.params=
+comment3.target=Material\ getMaterial()
+comment4.params=
+comment4.target=float\ getDurability()
+comment5.params=pName
+comment5.target=void\ setName(java.lang.String)
+comment6.params=pMaterial
+comment6.target=void\ setMaterial(Material)
+comment7.params=pDurability
+comment7.target=void\ setDurability(float)
+numComments=8

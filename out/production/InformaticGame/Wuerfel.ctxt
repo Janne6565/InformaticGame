@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Wuerfel
+comment1.params=pMin\ pMax
+comment1.target=Wuerfel(int,\ int)
+comment2.params=
+comment2.target=int\ wuerfeln()
+comment3.params=pMin
+comment3.target=void\ setMin(int)
+comment4.params=pMax
+comment4.target=void\ setMax(int)
+comment5.params=
+comment5.target=int\ getMin()
+comment6.params=
+comment6.target=int\ getMax()
+numComments=7

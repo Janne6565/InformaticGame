@@ -58,7 +58,7 @@ public class GUIManager {  // Dies ist die Klasse, die dafür zuständig ist, da
                 }
                 int itemChosen = openMenu(listAllItems, true); // Öffnet ein Menü mit allen Items
                 newFrame();
-                if (itemChosen == listAllItems.size()) { // Wenn man zurück will
+                if (itemChosen >= listAllItems.size()) { // Wenn man zurück will
                     openMainMenu(he);
                 }else{
                         System.out.print("\n");
@@ -77,6 +77,10 @@ public class GUIManager {  // Dies ist die Klasse, die dafür zuständig ist, da
                         list.add(sell);
                         int whatToDo = openMenu(list, true); // Listet die Optionen auf
                         newFrame();
+                        if (whatToDo>2){
+                            newFrame();
+                            openMainMenu(he);
+                        }
                         switch (whatToDo) {
                             case 1:
                                 he.setCredits(he.getCredits() + listItems.get(itemChosen - 1).getWorth() * listItems.get(itemChosen - 1).getCount());
@@ -121,6 +125,8 @@ public class GUIManager {  // Dies ist die Klasse, die dafür zuständig ist, da
                     }
                     i++;
                 }
+                newFrame();
+                System.out.println("Dein jetztiger Kontostand: " + he.getCredits());
                 int weaponShop = openMenu(listOptions, true);
                 if (weaponShop == 1){ // Für den Heiltrank
                     if (he.getCredits() >= 5) {
@@ -134,6 +140,7 @@ public class GUIManager {  // Dies ist die Klasse, die dafür zuständig ist, da
                     }
                 }else{
                     if (weaponShop >= listOptions.size()){
+                        newFrame();
                         openMainMenu(he);
                     }else {
                         newFrame();

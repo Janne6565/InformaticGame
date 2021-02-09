@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=GUIManager
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment10.params=held
+comment10.target=java.lang.String\ getHealthBar(Held)
+comment2.params=he
+comment2.target=void\ openMainMenu(Held)
+comment3.params=he\ we
+comment3.target=void\ openChest(Held,\ Weapon)
+comment4.params=
+comment4.target=void\ newFrame()
+comment5.params=he\ mo
+comment5.target=void\ k\u00E4mpfen(Held,\ Monster)
+comment6.params=he\ mo
+comment6.target=void\ showHandlers(Held,\ Monster)
+comment7.params=menu\ he\ mo
+comment7.target=java.util.ArrayList\ openFightMenu(int,\ Held,\ Monster)
+comment8.params=listAnswers\ cancel
+comment8.target=int\ openMenu(java.util.ArrayList,\ boolean)
+comment9.params=monster
+comment9.target=java.lang.String\ getHealthBar(Monster)
+numComments=11
