@@ -4,7 +4,9 @@ public class LibaryMonsters { // Monster Bibliothek
     public static Monster oldZombie;
     public static Monster skelleton;
     public static Monster spider;
+
     private static Wuerfel wuerfel = new Wuerfel(1, 3);
+
     private static ArrayList<Monster> monster = new ArrayList<>();
     public LibaryMonsters(){
         LibaryWeapons weaponsLibary = new LibaryWeapons();

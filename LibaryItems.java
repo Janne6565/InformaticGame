@@ -39,14 +39,14 @@ public class LibaryItems {  // Bibliothek mit Items
 
         string = new ItemStack("Faden", 1, stringIcon, 20);
 
-        ArrayList<String> IconScrap = new ArrayList<>();
-        stringIcon.add("   |######| ");
-        stringIcon.add(" |#######| ");
-        stringIcon.add(" |#######|  ");
-        stringIcon.add("|#######|   ");
-        stringIcon.add("|#######|  ");
+        ArrayList<String> iconScrap = new ArrayList<>();
+        iconScrap.add("   |######| ");
+        iconScrap.add(" |#######| ");
+        iconScrap.add(" |#######|  ");
+        iconScrap.add("|#######|   ");
+        iconScrap.add("|#######|  ");
 
-        scrap = new ItemStack("Schrott", 1, stringIcon, 1);
+        scrap = new ItemStack("Schrott", 1, iconScrap, 1);
 
         ArrayList<String> iconSnakeSkin = new ArrayList<>();
     }

@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -17,7 +18,7 @@ public class Kampfregel  // Main Klasse
         }
     }
 
-    public Kampfregel() throws InterruptedException{
+    public Kampfregel() throws InterruptedException, IOException {
         for (int i = 0; i < 50; i++){
             System.out.println("");
         }

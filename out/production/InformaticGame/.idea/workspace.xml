@@ -1,11 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5dd164d1-a4b2-424a-8874-8dbcf86e9530" name="Default Changelist" comment="" />
+    <list default="true" id="5dd164d1-a4b2-424a-8874-8dbcf86e9530" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kampfregel.class" beforeDir="false" afterPath="$PROJECT_DIR$/Kampfregel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kampfregel.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kampfregel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibaryMonsters.java" beforeDir="false" afterPath="$PROJECT_DIR$/LibaryMonsters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/InformaticGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/InformaticGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/InformaticGame/Kampfregel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/InformaticGame/Kampfregel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/InformaticGame/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/InformaticGame/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/InformaticGame/Weapon.ctxt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/InformaticGame/Weapon.ctxt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/InformaticGame/package.bluej" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/InformaticGame/package.bluej" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.bluej" beforeDir="false" afterPath="$PROJECT_DIR$/package.bluej" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -17,15 +37,22 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
   <component name="ProjectId" id="1nQTnxldsjXXlYtztoUp8M3MEdl" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Schule/Homeschooling/Aufgaben/WPInf31/GameMaik" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
@@ -54,37 +81,47 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1611321485687</updated>
+      <workItem from="1612877149426" duration="3643000" />
+      <workItem from="1612882504305" duration="34000" />
+      <workItem from="1612883786912" duration="1464000" />
+      <workItem from="1612885277979" duration="122000" />
+      <workItem from="1612954245950" duration="218000" />
+      <workItem from="1613066219771" duration="1090000" />
+      <workItem from="1613067701904" duration="1042000" />
+      <workItem from="1613070536638" duration="584000" />
+      <workItem from="1613072386763" duration="658000" />
+      <workItem from="1613078818481" duration="7000" />
+      <workItem from="1613463322819" duration="127000" />
+      <workItem from="1613472321994" duration="12000" />
+      <workItem from="1613472665223" duration="1757000" />
+      <workItem from="1613579368201" duration="1781000" />
+      <workItem from="1613633755223" duration="4000" />
     </task>
     <servers />
   </component>
-  <component name="WindowStateProjectService">
-    <state width="1877" height="862" key="GridCell.Tab.0.bottom" timestamp="1612364580046">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="862" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1612364580046" />
-    <state width="1877" height="862" key="GridCell.Tab.0.center" timestamp="1612364580046">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="862" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1612364580046" />
-    <state width="1877" height="862" key="GridCell.Tab.0.left" timestamp="1612364580046">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="862" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1612364580046" />
-    <state width="1877" height="862" key="GridCell.Tab.0.right" timestamp="1612364580046">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="862" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1612364580046" />
-    <state x="440" y="166" key="SettingsEditor" timestamp="1612364167859">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="440" y="166" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1612364167859" />
-    <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1612364122407">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1612364122407" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1612364050862">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1612364050862" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
