@@ -4,7 +4,7 @@
 
 Das User Interface basiert nur auf Ascii Schriftzeichen.
 
-Dieses Spiel wurde in wegen einer Informatik Aufgabe  programmiert.
+Dieses Spiel wurde im Sinne einer Informatik Aufgabe  programmiert.
 
 # Changelog: 
 
